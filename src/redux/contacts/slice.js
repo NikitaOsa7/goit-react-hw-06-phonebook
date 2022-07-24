@@ -11,7 +11,7 @@ export const onContactsSlice = createSlice({
         setFilter(state, action) {
             state.filter = action.payload
         },
-        addCotnacts(state, action) {
+        addContacts(state, action) {
             state.items.push(action.payload);
         },
         removeContacts(state, action) {
@@ -22,5 +22,5 @@ export const onContactsSlice = createSlice({
     }
 })
 
-export const { setFilter, addCotnacts, removeContacts } =
+export const { setFilter, addContacts, removeContacts } =
     onContactsSlice.actions;
